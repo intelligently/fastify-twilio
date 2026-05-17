@@ -1,0 +1,62 @@
+{
+  "name": "fastify-twilio",
+  "version": "0.1.0",
+  "description": "Fastify plugin for validating Twilio webhooks and Media Streams WebSocket handshakes.",
+  "license": "MIT",
+  "author": "Seth Brown <seth@sethkbrown.com>",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intelligently/fastify-twilio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/intelligently/fastify-twilio/issues"
+  },
+  "homepage": "https://github.com/intelligently/fastify-twilio#readme",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "fastify",
+    "twilio",
+    "webhook",
+    "twiml",
+    "media-streams",
+    "websocket"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "fastify-plugin": "^5.1.0"
+  },
+  "peerDependencies": {
+    "fastify": "^5.0.0",
+    "twilio": "^5.0.0 || ^6.0.0"
+  },
+  "devDependencies": {
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/websocket": "^11.2.0",
+    "@types/node": "^22.7.5",
+    "fastify": "^5.8.5",
+    "twilio": "^6.0.2",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.6",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=20.10.0"
+  }
+}
