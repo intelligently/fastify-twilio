@@ -1,5 +1,10 @@
 # fastify-twilio
 
+[![npm version](https://img.shields.io/npm/v/fastify-twilio.svg)](https://www.npmjs.com/package/fastify-twilio)
+[![npm downloads](https://img.shields.io/npm/dm/fastify-twilio.svg)](https://www.npmjs.com/package/fastify-twilio)
+[![CI](https://github.com/intelligently/fastify-twilio/actions/workflows/ci.yml/badge.svg)](https://github.com/intelligently/fastify-twilio/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Fastify plugin for Twilio webhooks and Voice Media Streams.
 
 This package focuses on the framework glue that is easy to get subtly wrong:
